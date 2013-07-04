@@ -1,0 +1,413 @@
+@font-face { font-family: OpenSans-Bold; src: url('../fonts/OpenSans-Bold.ttf') }
+@font-face { font-family: OpenSans-BoldItalic; src: url('../fonts/OpenSans-BoldItalic.ttf') }
+@font-face { font-family: OpenSans-ExtraBold; src: url('../fonts/OpenSans-ExtraBold.ttf') }
+@font-face { font-family: OpenSans-ExtraBoldItalic; src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') }
+@font-face { font-family: OpenSans-Italic; src: url('../fonts/OpenSans-Italic.ttf') }
+@font-face { font-family: OpenSans-Light; src: url('../fonts/OpenSans-Light.ttf') }
+@font-face { font-family: OpenSans-LightItalic; src: url('../fonts/OpenSans-LightItalic.ttf') }
+@font-face { font-family: OpenSans-Regular; src: url('../fonts/OpenSans-Regular.ttf') }
+@font-face { font-family: OpenSans-Semibold; src: url('../fonts/OpenSans-Semibold.ttf') }
+@font-face { font-family: OpenSans-SemiboldItalic; src: url('../fonts/OpenSans-SemiboldItalic.ttf') }
+
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'OpenSans-Regular', Arial;
+    background-color: rgba(249, 249, 249, 1);
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+heade, footer, section, nav {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: url("../img/header-background.jpg") no-repeat center top rgba(255, 255, 255, 1);
+    border-bottom: solid 1px rgba(240, 240, 240, 1);
+    width: 100%;
+    padding-top: 70px;
+}
+nav {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(77, 77, 77, 1);
+    margin-bottom: 125px;
+}
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 23.125em;
+    text-align: center;
+    height: 1.3125em;
+}
+nav li {
+    width: 7.5em;
+    height: 7.5em;
+    vertical-align: middle;
+    margin-top: -3.125em;
+    display: table-cell;
+    line-height: 7.5em;
+    -moz-border-radius: 3.75em;
+    -webkit-border-radius: 3.75em;
+    -khtml-border-radius: 3.75em;
+    border-radius: 3.75em;
+    display: inline-block;
+}
+nav li.active {
+    background-color: rgba(255, 124, 108, 1);
+}
+nav li a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.1875em;
+    line-height: 1.1875em;
+}
+.responsiveHolder {
+    font-size: 1em;
+    /*width: 1170px;*/
+    width: 73.125em;
+    margin: auto;
+}
+.profileImage {
+    float: right;
+    margin-bottom: 20px;
+}
+.profileName {
+    float: left;
+    font-family: "OpenSans-LightItalic", Arial;
+    font-size: 1.625em;
+    color: rgba(128, 128, 128, 1);
+    margin-top: 170px;
+    margin-bottom: 40px;
+}
+h1 {
+    font-family: "OpenSans-Light", Arial;
+    font-size: 2.538em;
+    line-height: 1.05em;
+    color: rgba(26, 26, 26, 1);
+    margin: 0;
+}
+h2 {
+    font: normal 2.8125em "OpenSans-Light", Arial;
+    color: rgba(77, 77, 77, 1);
+    text-transform: uppercase;
+}
+h3 {
+    font: normal 2.125em "OpenSans-Light", Arial;
+    color: rgba(128, 128, 128, 1);
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+p {
+    font: normal 1.25em "OpenSans-Light", Arial;
+    color: rgba(128, 128, 128, 1);
+    text-align: justify;
+}
+.mainContent {
+    margin-bottom: 100px;
+}
+.btn {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 124, 108, 1);
+    font: normal 1.125em "OpenSans-Regular", Arial;
+    line-height: 1em;
+    display: inline-block;
+    padding: 18px 25px;
+    transition: all 0.3s;
+    cursor: default;
+}
+.btn:hover {
+    background-color: rgba(255, 124, 108, 0.8);
+}
+.callToAction {
+    text-align: center;
+    margin: 25px 0;
+}
+.backToTop {
+    text-align: center;
+}
+.backToTopButton {
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    text-align: center;
+    background: url("../img/back-to-top.png") no-repeat;
+    width: 84px;
+    height: 41px;
+    font-size: 15px;
+    line-height: 44px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.backToTopButton:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+footer {
+    border-top: solid 1px rgba(240, 240, 240, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px 0;
+}
+.footerLeft {
+    float: left;
+}
+.footerRight {
+    float: right;
+    margin-top: 7px;
+}
+.footerRight a {
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+.footerRight a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+.footerName {
+    font: normal 24px "OpenSans-Light", Arial;
+    color: rgba(77, 77, 77, 1);
+}
+.footerTitle {
+    font: normal 13px "OpenSans-Light", Arial;
+    color: rgba(169, 169, 169, 1);
+}
+
+/*
+ * CONTACT PAGE
+*/
+.contactCellHolder {
+    margin: 40px 0 10px;
+}
+.contactCell {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.contactIcon {
+    background: url("../img/contact-sprite.png") 0 0 transparent;
+    width: 65px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.icon-skype {
+    background-position: -64px 0;
+}
+.icon-email {
+    background-position: -128px 0;
+}
+.icon-gtalk {
+    background-position: -192px 0;
+}
+.contactValue {
+    line-height: 65px;
+    font-size: 1.5em;
+}
+form {
+    background: url("../img/form-bgd.png") no-repeat 700px -103px;
+}
+label {
+    font: normal 1.2em "OpenSans-Light", Arial;
+    width: 190px;
+    display: inline-block;
+    vertical-align: top;
+}
+input[type="text"], input[type="email"], textarea {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px rgba(220, 220, 220, 1);
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+    padding: 10px;
+    font: normal 1.2em "OpenSans-Light", Arial;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 430px;
+    outline: none;
+    transition: all 0.3s;
+}
+input[type="submit"] {
+    margin-left: 190px;
+}
+textarea {
+    width: 530px;
+    height: 200px;
+}
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 1);
+}
+textarea:focus {
+    background: rgba(255, 255, 255, 1);
+}
+input[type="submit"] {
+    border: none;
+    display: block;
+
+}
+
+/*
+ * BLOG PAGE
+*/
+.blogPostHolder {
+    margin-bottom: 60px;
+    position: relative;
+}
+.blogImg {
+    float: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px rgba(232, 232, 232, 1);
+    margin-right: 25px;
+}
+.blogText {
+    font: normal 15px "OpenSans-Light", Arial;
+    color: rgba(128, 128, 128, 1);
+    text-align: justify;
+}
+.blogDate {
+    position: absolute;
+    top: -0.5625em;
+    right: 0;
+    font: normal 1.125em "OpenSans-Light", Arial;
+    color: rgba(255, 124, 108, 1);
+    line-height: 1em;
+}
+.blogDate span {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 124, 108, 1);
+    font-size: 1.667em;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -khtml-border-radius: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+
+
+/*----------------------------------------------*/
+/*--------------- MEDIA QUERIES ----------------*/
+/*----------------------------------------------*/
+@media screen and (max-width: 1170px) {
+    .responsiveHolder {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding-top: 38px;
+    }
+    nav {
+        margin-bottom: 34px;
+    }
+    .profileName {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+    .profileImage {
+        float: none;
+        text-align: center;
+    }
+
+    form {
+        background: none;
+    }
+    .contactCell {
+        width: 100%;
+    }
+    label {
+        display: block;
+        margin-bottom: 4px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
+
+
+    .blogDate {
+        position: static;
+        margin-bottom: 10px;
+    }
+    .blogPostHolder h3 {
+        margin-bottom: 5px;
+    }
+    .blogImg {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contactValue {
+        font-size: 1.2em;
+    }
+    .blogDate {
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .blogPostHolder h3 {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .footerLeft {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footerRight {
+        float: none;
+        text-align: center;
+    }
+
+}
