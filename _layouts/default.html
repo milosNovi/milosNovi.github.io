@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mnov" ng-controller="MainCtrl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google-site-verification" content="D2mXppEqrX3Ix_SCq7O_YqptppeKnuDJEg03JwEtoFY" />
+         <title>{{ page.title }}</title>
+        <link href="css/general.css" type="text/css" rel="stylesheet">
+    </head>
+    <body ng-cloak>
+        {% include header.html%}
+
+        <div class="ng-view responsiveHolder mainContent">
+        	{{ content }}
+        </div>
+
+        <div class="backToTop">
+            <div class="backToTopButton">top</div>
+        </div>
+
+	{% include footer.html %}
+
+        <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+	{% include analytics %}
+
+    </body>
+</html>

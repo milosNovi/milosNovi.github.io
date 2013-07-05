@@ -1,65 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="mnov" ng-controller="MainCtrl">
-    <head>
-        <meta charset="UTF-8">
-        <title>Milos Novićević</title>
-        <link href="css/general.css" type="text/css" rel="stylesheet">
-    </head>
-    <body ng-cloak>
-        <header>
-            <nav>
-                <ul class="clearfix">
-                    <li ng-class="getClass('/about-me')"><a href="#/about-me">About me</a></li>
-                    <!-- <li ng-class="getClass('/contact')"><a href="#/contact">Contact</a></li>
-                    <li ng-class="getClass('/blog')"><a href="#/blog">Blog</a></li> -->
-                </ul>
-            </nav>
-            <div class="responsiveHolder clearfix">
-                <div class="profileImage">
-                    <img src="img/profile-img.png" alt="Profile image | Milos Novicevic">
-                </div>
-                <div class="profileName">
-                    <h1>Miloš Novićević</h1>
-                    <!-- “Be yourself. Everyone else is already taken.” -->
-                </div>
-            </div>
-        </header>
+---
+layout: default
+title: About me
+---
 
-        <div class="ng-view responsiveHolder mainContent">
-        	<h2>About me</h2>
-	<p>
-	    Working in web development for 5 years, I enjoy coding modern and innovative website. A results-driven, articulate and analytical developer, team player, proactive and solution oriented. Developing web applications for various customer across the world.
-	</p>
-	<p>
-	    Pushing the limits of what can be done with PHP and more specifically Symfony 2 and CakePHP. I'm always looking for new challenges and way to expand my field of knowledge.
-	</p>
-	<div class="callToAction">
-	    <a href="#/contact" class="btn">Let's work together</a>
-	</div>
-        </div>
-
-        <div class="backToTop">
-            <div class="backToTopButton">top</div>
-        </div>
-        <footer>
-            <div class="responsiveHolder clearfix">
-                <div class="footerLeft">
-                    <div class="footerName">Miloš Novićević</div>
-                    <div class="footerTitle">senior PHP developer</div>
-                </div>
-                <div class="footerRight">
-                    <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn | Milos Novicevic"></a>
-                    <a href="#" target="_blank"><img src="img/github.png" alt="GitHub | Milos Novicevic"></a>
-                    <a href="#" target="_blank"><img src="img/twitter.png" alt="Twitter | Milos Novicevic"></a>
-                    <a href="#" target="_blank"><img src="img/facebook.png" alt="Facebook | Milos Novicevic"></a>
-                </div>
-            </div>
-        </footer>
-
-        <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-
-
-        <script src="js/mnov.js"></script>
-
-    </body>
-</html>
+ <h2>About me</h2>
+<p>
+    Working in web development for 5 years, I enjoy coding modern and innovative website. A results-driven, articulate and analytical developer, team player, proactive and solution oriented. Developing web applications for various customer across the world.
+</p>
+<p>
+    Pushing the limits of what can be done with PHP and more specifically Symfony 2 and CakePHP. I'm always looking for new challenges and way to expand my field of knowledge.
+</p>
+<div class="callToAction">
+    <a href="/contact.html" class="btn">Let's work together</a>
+</div>
