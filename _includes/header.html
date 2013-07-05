@@ -1,8 +1,8 @@
 <header>
         <nav>
             <ul class="clearfix">
-                <li ><a href="/">About me</a></li>
-                <li ><a href="/contact.html">Contact</a></li>
+                <li {% if page.url == "/index.html" %}class="active"{%endif%}><a href="/" >About me</a></li>
+                <li  {% if page.url == "/contact.html" %}class="active"{%endif%}><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="responsiveHolder clearfix">
