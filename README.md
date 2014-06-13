@@ -8,8 +8,10 @@ www.milosnovicevic.com
 Development guidelines
 ===================
 ~ $ cd mywebsite_path
-~/myblog $ jekyll serve
-# => Now browse to http://localhost:4000
+
+~ /myblog $ jekyll serve
+
+Now browse to http://localhost:4000
 
 ~ $ jekyll build --watch
 
